@@ -1,5 +1,5 @@
 # Shifted Sphere Function
 
-Choice of the algorithm: self implementation of PSO 
+Choice of the algorithm: self implementation of PSO [details here](../PSO/README.md)
  
-See more details in F1 Shifted Sphere Function .ipynb 
+Shifted Sphere Function  [details here](F1 Shifted Sphere Function .ipynb)
