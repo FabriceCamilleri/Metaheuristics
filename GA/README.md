@@ -6,9 +6,9 @@ Implementation of the Genetic algorithm to solve the TSP problem.
 Implementation choices: 
 
 - Parent selection for cross-over using: 
- - Selection by Ranking for N first individual
+  - Selection by Ranking for N first individual
  then for the remaning selection: 
- - Roulette Wheel Selection 
+  - Roulette Wheel Selection 
  
 - Random initialization of the population
 
