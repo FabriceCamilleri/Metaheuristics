@@ -2,5 +2,5 @@
 
 Choice of the algorithm: Pygmo implementation of the simulated annealing algorithm.
 
-See more details in 6 Shifted Ackley’s Function .ipynb
+Shifted Ackley’s Function [details here](F6ShiftedAckleysFunction.ipynb)
  
