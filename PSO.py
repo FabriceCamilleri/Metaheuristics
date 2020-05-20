@@ -2,6 +2,7 @@ from functions import *
 import numpy as np
 import matplotlib as plt
 import time
+import random
 
 
 # definition of a class for Particle
@@ -17,18 +18,35 @@ class Particle:
 
     def moveParticule (self, swarm):
         #print (self.position)
-        self.velocity =  swarm.w * self.velocity  + \
-            swarm.c1 * np.random.uniform(low=0, high=(self.best_part_pos - self.position), size=self.problem.dim) + \
-            swarm.c2 * np.random.uniform(low=0, high=(swarm.best_swarm_position - self.position), size=self.problem.dim)
+        r1 = random.random()    # randomizations
+        r2 = random.random()
+     
+        
+        self.velocity =  ( swarm.w * self.velocity)   + \
+            ( swarm.c1 * r1 * (self.best_part_pos - self.position) ) + \
+            ( swarm.c2 * r2 * (swarm.best_swarm_position - self.position) )
+        '''
+        self.velocity =  swarm.w * ( self.velocity   + \
+            ( swarm.c1 * r1 * (self.best_part_pos - self.position) ) + \
+            ( swarm.c2 * r2 * (swarm.best_swarm_position - self.position) ) )
+            
+        #print ('ok')
+        '''
+        
+        self.velocity=np.minimum(self.velocity, self.problem.bounds[1])
+        self.velocity=np.maximum(self.velocity, self.problem.bounds[0])
+        
         self.position = self.position + self.velocity
-        self.position=np.minimum(self.position, self.problem.bounds[1])
-        self.position=np.maximum(self.position, self.problem.bounds[0])
+        
         #print (self.position)
         self.fitness = self.problem.fitness(self.position)
         #print(self.fitness)
         if self.fitness < self.best_fitness:
             self.best_fitness = self.fitness
             self.best_part_pos = self.position
+            
+    
+    
             
             
 # definition of a class for Swarm
