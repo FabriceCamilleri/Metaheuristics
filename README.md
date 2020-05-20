@@ -15,3 +15,5 @@ To solve:
   - Shifted Rastrigin’s Function 
   - Shifted Griewank’s Function
   - Shifted Ackley’s Function 
+
+Jupyter notebooks are provided to be able to reproduce the results. 
