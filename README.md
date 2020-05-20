@@ -4,6 +4,8 @@ Implementation of 2 metaheuristic algorithms:
 - Genetic algorithm
 - Particle Swam Optimization
 
+Use of pygmo simulated annealing implementation.
+
 To solve:
 - Discrete optimization problem: TSP (traveling salesman problem) with 38 and 194 cities
 - Continuous problems of dimensions 50 and 500
