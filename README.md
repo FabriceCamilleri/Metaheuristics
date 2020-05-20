@@ -1,7 +1,7 @@
 # Metaheuristics 
  
 Implementation of 2 metaheuristic algorithms:
-- Genetic algorithm
+- Genetic algorithm [a relative link](GA/README.md)
 - Particle Swam Optimization
 
 Use of pygmo simulated annealing implementation.
