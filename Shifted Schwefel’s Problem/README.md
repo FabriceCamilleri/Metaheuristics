@@ -1,6 +1,6 @@
 # Shifted Schwefel’s Problem
 
-Choice of the algorithm: self implementation of PSO
+Choice of the algorithm: self implementation of PSO [details here](../PSO/README.md)
 
-See more details in F2 Schwefel’s Problem.ipynb 
+Shifted Schwefel’s Problem [details here](F2SchwefelsProblem.ipynb)
  
